@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 30%; /* Three cards per row */
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card .short-content {
+    margin: 10px 0;
+}
