@@ -57,24 +57,35 @@ nav{
 .cardsfirst img{
     border-radius: 8px;
 }
-.cards img{
-    border-radius: 8px;
-    height: 180px;
-    width: 280px;
-    justify-content: center;
-}
-#services{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 40px;
-    margin-left: 2cm;
-    
-}
-.cards h5{
-    text-align: center;
-    color: blueviolet;
-
-}
 .cards{
     background-color: whitesmoke;
+}
+#services{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cards{
+    background-color:burlywood;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 250px;
+    width: 350px;
+    margin-left: 1cm;
+}
+.cards:hover {
+    transform: translateY(-5px);
+}
+.cards img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.cardscontent {
+    padding: 15px;
 }
